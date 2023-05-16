@@ -22,7 +22,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
-          python script_remote.py
+          python test.py
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
