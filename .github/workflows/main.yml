@@ -3,7 +3,7 @@ name: Update Time
 # on: [push]
 on :
   schedule: 
-    - cron: "0 0 * * *"
+    - cron: "16 0 * * *"
 
 jobs:
   build:
