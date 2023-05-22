@@ -7,7 +7,7 @@ def get_vals():
     with open('dataset/value-list.csv', 'w') as f:
 
         for i in range(5) :
-            url = f"https://www.nikkei.com/markets/kabu/nidxprice/?StockIndex=NAVE&Gcode=00&hm={i+1}"
+            url = f""
             response = requests.get(url)
             soup = BeautifulSoup(response.content,'html.parser')
             value = soup.find_all('tr', {"class": "tr2"})
